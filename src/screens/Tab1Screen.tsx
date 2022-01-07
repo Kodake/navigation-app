@@ -4,6 +4,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import { Text, View } from 'react-native'
 import { styles, colores } from '../theme/appTheme';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { TouchableButtonIcon } from '../components/TouchableButtonIcon';
 
 
 export const Tab1Screen = () => {
@@ -15,21 +16,21 @@ export const Tab1Screen = () => {
     }, [])
 
     return (
-        <View style={{ 
+        <View style={{
             ...styles.globalMargin,
             marginTop: top + 10
         }}
         >
-            <Text style={ styles.title }> Iconos </Text>
+            <Text style={styles.title}> Iconos </Text>
 
             <Text>
-                <Icon name="airplane-outline" size={ 80 } color={ colores.primary } />
-                <Icon name="attach-outline" size={ 80 } color={ colores.primary } />
-                <Icon name="bonfire-outline" size={ 80 } color={ colores.primary } />
-                <Icon name="calculator-outline" size={ 80 } color={ colores.primary } />
-                <Icon name="chatbubble-ellipses-outline" size={ 80 } color={ colores.primary } />
-                <Icon name="images-outline" size={ 80 } color={ colores.primary } />
-                <Icon name="leaf-outline" size={ 80 } color={ colores.primary } />
+                <TouchableButtonIcon iconName="airplane-outline" size={80} />
+                <TouchableButtonIcon iconName="attach-outline" size={80} />
+                <TouchableButtonIcon iconName="bonfire-outline" size={80} />
+                <TouchableButtonIcon iconName="calculator-outline" size={80} />
+                <TouchableButtonIcon iconName="chatbubble-ellipses-outline" size={80} />
+                <TouchableButtonIcon iconName="images-outline" size={80} />
+                <TouchableButtonIcon iconName="leaf-outline" size={80} />
             </Text>
 
         </View>
